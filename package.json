@@ -1,0 +1,25 @@
+{
+  "name": "lingjing",
+  "private": true,
+  "description": "绫境：电商三维虚拟试衣体验版",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "dev": "concurrently -n api,merchant,ops,h5 -c blue,magenta,yellow,green \"pnpm dev:api\" \"pnpm dev:merchant\" \"pnpm dev:ops\" \"pnpm dev:consumer\"",
+    "dev:api": "pnpm --filter @lingjing/api dev",
+    "dev:merchant": "pnpm --filter @lingjing/merchant-web dev",
+    "dev:ops": "pnpm --filter @lingjing/ops-web dev",
+    "dev:consumer": "pnpm --filter @lingjing/consumer-uniapp dev",
+    "build": "pnpm -r --if-present build",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "test": "pnpm --filter @lingjing/tryon-viewer test && pnpm --filter @lingjing/api test",
+    "start:api": "pnpm --filter @lingjing/api start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  }
+}

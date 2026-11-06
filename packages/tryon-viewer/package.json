@@ -1,0 +1,24 @@
+{
+  "name": "@lingjing/tryon-viewer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./mesh": "./src/mesh.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test test/mesh.test.ts"
+  },
+  "dependencies": {
+    "@lingjing/shared": "workspace:*",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.0",
+    "@types/three": "0.180.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

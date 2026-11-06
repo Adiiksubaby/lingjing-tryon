@@ -1,0 +1,27 @@
+{
+  "pages": [
+    { "path": "pages/index/index", "style": { "navigationBarTitleText": "商城" } },
+    { "path": "pages/fitting/fitting", "style": { "navigationBarTitleText": "试衣间" } },
+    { "path": "pages/profile/profile", "style": { "navigationBarTitleText": "我的" } },
+    {
+      "path": "pages/tryon/tryon",
+      "style": { "navigationBarTitleText": "试衣间", "navigationStyle": "custom" }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "绫境",
+    "navigationBarBackgroundColor": "#faf7f2",
+    "backgroundColor": "#efeae2"
+  },
+  "tabBar": {
+    "color": "#8a8178",
+    "selectedColor": "#9a3412",
+    "backgroundColor": "#faf7f2",
+    "list": [
+      { "pagePath": "pages/index/index", "text": "商城" },
+      { "pagePath": "pages/fitting/fitting", "text": "试衣间" },
+      { "pagePath": "pages/profile/profile", "text": "我的" }
+    ]
+  }
+}

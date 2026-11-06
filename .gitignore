@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.turbo/
+data/
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+.DS_Store
+coverage/
+*.log
+*.sqlite
+*.sqlite-*
+*.sqlite-journal
+apps/*/dist/
+packages/*/dist/

@@ -1,0 +1,22 @@
+{
+  "name": "绫境试衣",
+  "appid": "__UNI__LINGJING",
+  "description": "消费者端。当前用 Vite 跑 H5；原生打包见 README。",
+  "versionName": "0.1.0",
+  "versionCode": "100",
+  "vueVersion": "3",
+  "h5": {
+    "title": "绫境试衣",
+    "router": { "mode": "history" }
+  },
+  "app-plus": {
+    "usingComponents": true,
+    "compilerVersion": 3,
+    "splashscreen": {
+      "alwaysShowBeforeRender": true,
+      "waiting": true,
+      "autoclose": true,
+      "delay": 0
+    }
+  }
+}
