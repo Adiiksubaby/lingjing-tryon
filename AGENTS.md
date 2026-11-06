@@ -1,0 +1,10 @@
+# 给 AI 与协作者
+
+执行前重新拉项目记忆，再开发。
+
+1. `git fetch`，检出目标分支并 `git pull`（或等价地拉到最新）。
+2. 阅读 `docs/PROJECT_MEMORY.md` 与 `docs/AI_EXECUTION_RULES.md`。
+3. 读完再改代码。改完推功能分支，优先开 PR 合入 `main`。不要强推 `main`。
+4. 产品事实或约定有变时，同一 PR 更新 `docs/PROJECT_MEMORY.md`。
+
+拉 Git 几乎不耗模型 token；耗用量的是读改代码。完整顺序以 `docs/AI_EXECUTION_RULES.md` 为准。

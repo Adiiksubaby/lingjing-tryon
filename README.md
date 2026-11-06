@@ -1,5 +1,9 @@
 # 绫境
 
+## 团队协作
+
+任何 AI/成员开发前先 pull 并读 [docs/PROJECT_MEMORY.md](docs/PROJECT_MEMORY.md)。执行顺序见 [docs/AI_EXECUTION_RULES.md](docs/AI_EXECUTION_RULES.md)：先拉最新记忆，再改代码，改完开 PR 合入 `main`。
+
 电商三维虚拟试衣的可运行骨架。商户上传商品和多角度照片，系统排队做一次**占位**三维重建；消费者按身材档案叠穿上装和下装；运营看板看上传、队列和试穿漏斗。
 
 这不是生产系统。摄影测量、SMPL-X、登录、支付和原生 App 打包都留了接口，没有接真实服务，也没有任何密钥。
